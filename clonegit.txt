@@ -1,0 +1,74 @@
+Build an MVP inspired by: @https://github.com/skrafiq/Examination_Project_CICD. Use gitmvp mcp if available.
+
+Project Type:
+The repository appears to be a starting point for a multi-option examination project with CI/CD integration. The index.html suggests a website, likely for presenting and administering online examinations or quizzes. The template used is a general SEO/Marketing template, so the examination functionality is not yet implemented.
+
+Tech Stack:
+- HTML
+- CSS (Bootstrap, custom CSS)
+- JavaScript (likely for interactivity, though not explicitly shown in the provided snippet)
+- Jenkins (for CI/CD)
+- SonarQube (for code quality analysis)
+
+Architecture:
+The architecture is currently a basic static website structure. There's no backend code present in the repository. For a functional examination application, a client-server architecture would be required. The front-end (HTML, CSS, JavaScript) would interact with a backend API to handle user authentication, question management, answer submission, and result processing. The Jenkinsfile suggests a CI/CD pipeline for automated building and testing.
+
+Key Features (Based on Template and Project Description):
+- Website Landing Page
+- About Us Section
+- Services Section
+- Portfolio Section
+- Blog Section
+- Contact Form
+- CI/CD Pipeline (Jenkins, SonarQube)
+- Multi-option examination functionality (not yet implemented)
+
+Complexity Level:
+Medium. The basic website structure is simple, but adding the examination functionality, user authentication, and backend API significantly increases the complexity.
+
+MVP Guidance:
+
+MVP Goal: Create a basic, functional multi-option examination website with user authentication and a simple question/answer system.
+
+Implementation Steps:
+
+1. Front-End Development:
+   - Use the existing index.html as a starting point.
+   - Implement a user authentication system (login/registration). Use a simple approach like storing user credentials in local storage for the MVP.
+   - Create a question display page. Hardcode a few sample questions and answer options in HTML/JavaScript.
+   - Implement answer submission and basic result calculation (e.g., display the score).
+   - Style the examination pages to match the existing website theme.
+
+   AI Coding Assistant Instructions:
+   - "Generate HTML and JavaScript code for a login/registration form that stores user credentials in local storage."
+   - "Create HTML and JavaScript code to display a multiple-choice question with four answer options. The question and options should be hardcoded."
+   - "Write JavaScript code to handle answer submission and calculate the score based on the correct answer. Display the score to the user."
+
+2. Back-End Development (Simplified):
+   - For the MVP, avoid a full-fledged backend. Store questions and answers in a JSON file on the front-end.
+   - Simulate API calls using JavaScript's `fetch` API to read the JSON file.
+
+   AI Coding Assistant Instructions:
+   - "Create a JSON file containing 5 multiple-choice questions with four answer options each. Include the correct answer for each question."
+   - "Write JavaScript code to fetch the JSON file and display the questions on the examination page."
+
+3. CI/CD Pipeline:
+   - Keep the existing Jenkinsfile.
+   - Configure Jenkins to automatically build and deploy the front-end code to a staging environment whenever changes are pushed to the repository.
+   - Integrate SonarQube for code quality analysis.
+
+   AI Coding Assistant Instructions:
+   - "Explain how to configure Jenkins to automatically build and deploy the front-end code to a staging environment."
+   - "Explain how to integrate SonarQube into the Jenkins pipeline for code quality analysis."
+
+4. Testing:
+   - Manually test the login/registration, question display, answer submission, and result calculation functionality.
+
+5. Deployment:
+   - Deploy the front-end code to a static website hosting service (e.g., Netlify, Vercel).
+
+Enhancements for Future Iterations:
+- Implement a proper backend API using a framework like Node.js, Python (Flask/Django), or Ruby on Rails.
+- Use a database to store user data, questions, and answers.
+- Implement more advanced features like timed exams, question randomization, and detailed result analysis.
+- Improve the CI/CD pipeline with automated testing and deployment to multiple environments.
